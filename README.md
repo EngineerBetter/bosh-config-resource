@@ -83,6 +83,7 @@ deployment manifest and then deploy.
 
   If both `source_file` and `target` are specified, `source_file` takes
   precedence.
+* `vars`: variables to apply
 
 
 ``` yaml
@@ -96,4 +97,7 @@ deployment manifest and then deploy.
     releases:
       - path/to/first/release
       - path/to/second/release
+    vars:
+      key: value
+      foo: bar
 ```
